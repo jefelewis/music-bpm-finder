@@ -12,7 +12,15 @@
     "type": "git",
     "url": "git+https://github.com/jefelewis/music-bpm-finder.git"
   },
-  "keywords": ["music", "audio", "song", "bpm", "tempo", "finder", "music production"],
+  "keywords": [
+    "music",
+    "audio",
+    "song",
+    "bpm",
+    "tempo",
+    "finder",
+    "music production"
+  ],
   "author": "Jeff Lewis",
   "license": "ISC",
   "bugs": {
@@ -20,9 +28,9 @@
   },
   "homepage": "https://github.com/jefelewis/music-bpm-finder#readme",
   "dependencies": {
-
+    "fs": "0.0.1-security",
+    "music-tempo": "^1.0.3",
+    "web-audio-api": "^0.2.2"
   },
-  "devDependencies": {
-
-  }
+  "devDependencies": {}
 }
