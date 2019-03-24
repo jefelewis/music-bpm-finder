@@ -9,7 +9,7 @@
 
 ## Built With
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - Programming Language
-* [Music Tempo](https://www.npmjs.com/package/music-tempo) - Audio Library
+* [Music Tempo](https://www.npmjs.com/package/music-tempo) - Audio Library API
 * [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API) - Audio Processor/Synthesizer
 * [fs](https://www.npmjs.com/package/fs) - File System Library
 
