@@ -19,7 +19,7 @@
 npm install
 ```
 
-**2. Start iOS Simulator:**
+**2. Find Song Data:**
 ```
 node musicBPMFinder.js
 ```
