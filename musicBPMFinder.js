@@ -17,13 +17,14 @@ const findBPM = async (buffer) => {
     let channel1Data = await buffer.getChannelData(0);
     let channel2Data = await buffer.getChannelData(1);
 
-    //
+    // Channel Length
     let length = channel1Data.length;
+
+    // Iterate Over Channel
     for (let i = 0; i < length; i++) {
       audioData[i] = (channel1Data[i] + channel2Data[i]) / 2;
     }
   }
-  
   else {
     audioData = await buffer.getChannelData(0);
   }
@@ -31,11 +32,10 @@ const findBPM = async (buffer) => {
   // Song Data
   let songData = await new MusicTempo(audioData);
 
-
-  // BPM (Tempo)
+  // Song Data: BPM (Tempo)
   console.log(`BPM: ${Math.round(songData.tempo)}`);
 
-  // Beats
+  // Song Data: Beats
   // console.log(`Beats: ${songData.beats}`);
 }
 
