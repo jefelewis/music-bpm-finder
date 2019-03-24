@@ -1,0 +1,28 @@
+{
+  "name": "music-bpm-finder",
+  "version": "1.0.0",
+  "description": "",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "node musicBPMFinder.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jefelewis/music-bpm-finder.git"
+  },
+  "keywords": ["music", "audio", "song", "bpm", "tempo", "finder", "music production"],
+  "author": "Jeff Lewis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jefelewis/music-bpm-finder/issues"
+  },
+  "homepage": "https://github.com/jefelewis/music-bpm-finder#readme",
+  "dependencies": {
+
+  },
+  "devDependencies": {
+
+  }
+}
