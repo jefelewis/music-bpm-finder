@@ -9,8 +9,8 @@ let song = fs.readFileSync('./assets/TooBigForBiggie(Version 8).aif');
 // Find BPM
 const findBPM = async (buffer) => {
   // Process Time
-  console.time('Process Time');
   console.log('Analyzing Song');
+  console.time('Process Time');
 
   // Audio Data
   let audioData = [];
