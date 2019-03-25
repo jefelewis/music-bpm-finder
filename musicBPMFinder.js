@@ -14,8 +14,10 @@ const findBPM = async (buffer) => {
 
   // Audio Data
   let audioData = [];
+
   // Take the average of the two channels
   if (buffer.numberOfChannels == 2) {
+    console.log('Analyzing Channel Average...');
 
     // Channel Data
     let channel1Data = await buffer.getChannelData(0);
@@ -28,7 +30,6 @@ const findBPM = async (buffer) => {
     for (let i = 0; i < length; i++) {
       audioData[i] = (channel1Data[i] + channel2Data[i]) / 2;
     }
-    console.log('Completed: Channel Average...');
   }
   else {
     audioData = await buffer.getChannelData(0);
