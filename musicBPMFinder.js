@@ -10,6 +10,7 @@ let song = fs.readFileSync('./assets/TooBigForBiggie(Version 8).aif');
 const findBPM = async (buffer) => {
   // Process Time
   console.time('Process Time');
+  console.log('Analyzing Song');
 
   // Audio Data
   let audioData = [];
@@ -27,22 +28,24 @@ const findBPM = async (buffer) => {
     for (let i = 0; i < length; i++) {
       audioData[i] = (channel1Data[i] + channel2Data[i]) / 2;
     }
+    console.log('Completed: Channel Average');
   }
   else {
     audioData = await buffer.getChannelData(0);
   }
 
   // Song Data
+  console.log('Extracting Song Data');
   let songData = await new MusicTempo(audioData);
-
-  // Process Time
-  console.timeEnd('Process Time');
-
+  
   // Song Data: BPM (Tempo)
   console.log(`BPM: ${Math.round(songData.tempo)}`);
 
   // Song Data: Beats
   // console.log(`Beats: ${songData.beats}`);
+
+  // Process Time
+  console.timeEnd('Process Time');
 }
 
 // Context
