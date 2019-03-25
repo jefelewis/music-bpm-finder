@@ -8,11 +8,20 @@ class BPM extends React.Component {
     super(props);
   }
 
+  // Find BPM
+  findBPM = () => {
+    console.log(`sup g`);
+  };
+
+
   render() {
     return (
       <div>
         <div id="title-container">
           <h2 id="title-text">BPM Finder</h2>
+
+          <Button outline color="primary" onClick={this.findBPM}>Find BPM</Button>
+
         </div>
       </div>
     );
